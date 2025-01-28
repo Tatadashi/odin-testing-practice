@@ -1,13 +1,17 @@
-import { capitalize } from './capitalize.js'
+import { capitalize } from "./capitalize.js";
 
-test('capitalizes cat to Cat', () => {
-    expect(capitalize('cat')).toMatch('Cat');
+it("capitalizes cat to Cat", () => {
+  expect(capitalize("cat")).toBe("Cat");
 });
 
-test("capitalizes c to C", () => {
-  expect(capitalize("c")).toMatch("C");
+it("capitalizes c to C", () => {
+  expect(capitalize("c")).toBe("C");
 });
 
-test("capitalizes At to At", () => {
-  expect(capitalize("At")).toMatch("At");
+it("capitalizes At to At", () => {
+  expect(capitalize("At")).toBe("At");
+});
+
+it("capitalizes fAt to FAt", () => {
+  expect(capitalize("fAt")).toBe("FAt");
 });
